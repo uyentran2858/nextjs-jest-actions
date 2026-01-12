@@ -4,6 +4,8 @@ type Params = {
   };
 };
 
+export const dynamic = 'force-dynamic';
+
 export async function generateMetadata({ params }: Params) {
   return { title: `Post: ${params.slug}` };
 }
